@@ -9,6 +9,7 @@ public class NewFile {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank(message="should not contain space")
+    @Column(name=unique)
     private String name;
     @NotBlank(message="no blank allowed")
     @Email(message="invalid format")
