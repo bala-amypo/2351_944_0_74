@@ -28,5 +28,8 @@ public Newfile update(Long id,Newfile newww){
     return rep.save(existing);
 }
 @Override
+public void delete(Long id){
+    rep.delete(id);
+}
 
 }
