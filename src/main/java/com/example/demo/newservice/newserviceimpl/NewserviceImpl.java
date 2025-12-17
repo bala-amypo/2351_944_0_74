@@ -22,7 +22,11 @@ public List<NewFile>getall(){
 }
 @Override
 public Newfile update(Long id,Newfile newww){
-    return rep.
+    Newfile existing = getidval(id);
+    existing.setName(newww.getName());
+    existing.setEmail(newww.getEmail());
+    return rep.save(existing);
 }
+@Override
 
 }
