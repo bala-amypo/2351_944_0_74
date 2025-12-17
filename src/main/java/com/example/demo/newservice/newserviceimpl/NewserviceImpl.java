@@ -8,7 +8,7 @@ public NewserviceImpl(NewfileRepo rep){
     this.rep = rep;
 }
 @Override
-public Newfile savedata(Newfile newww){
+public Newfile savedata (Newfile newww){
     return rep.save(newww)
 }
 @Override
