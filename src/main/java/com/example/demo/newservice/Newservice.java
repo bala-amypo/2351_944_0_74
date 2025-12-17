@@ -6,6 +6,7 @@ public interface Newservice{
     NewFile savedata(NewFile newfile);
     NewFile getidval(Long id);
     List<NewFile>getall();
-    
+    NewFile update(Long id,Newfile newww);
+    void delete(Long id);
 
 }
