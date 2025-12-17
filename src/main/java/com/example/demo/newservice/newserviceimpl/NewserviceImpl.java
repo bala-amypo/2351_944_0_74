@@ -9,11 +9,16 @@ public NewserviceImpl(NewfileRepo rep){
 }
 @Override
 public Newfile savedata(Newfile newww){
-    return rep.save(newfile)
+    return rep.save(newww)
 }
 @Override
 public Newfile getidval(Long id){
-    return rep.get()
+    return rep.get(id)
+}
+@Override
+public List<NewFile>getall(){
+    return new ArrayList<>();
+    
 }
 
 }
