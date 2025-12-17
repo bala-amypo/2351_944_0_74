@@ -24,7 +24,7 @@ public class NewfileController{
    }
     @DeleteMapping("/delete/{id}") // delete
     public String delete(@PathVariable int id,@RequestBody Studententity st){
-        return src.delet(id);
+        return src.delete(id);
     }
 
 }
