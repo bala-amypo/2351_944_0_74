@@ -16,7 +16,7 @@ public Newfile getidval(Long id){
     return rep.findById(id);
 }
 @Override
-public List<NewFile>getall(){
+public Newfile getidval(Long id){
     return rep.findAll();
 
 }
