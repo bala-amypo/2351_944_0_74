@@ -30,7 +30,7 @@ public class Studentcontroller {
         return src.id(id);
 
     }
-    @PutMapping("/update{}")
+    @PutMapping("/update{id}")
     
 
     
