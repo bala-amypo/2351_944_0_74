@@ -13,12 +13,16 @@ public Newfile savedata(Newfile newww){
 }
 @Override
 public Newfile getidval(Long id){
-    return rep.get(id)
+    return rep.findById(id);
 }
 @Override
 public List<NewFile>getall(){
-    return new ArrayList<>();
-    
+    return rep.findAll();
+
+}
+@Override
+public Newfile update(Long id,Newfile newww){
+    return rep.
 }
 
 }
