@@ -1,6 +1,11 @@
+
+
+
+
 @RestController
 public class NewfileController{
     @Autowired
+
     Newservice src
     @PostMapping("/post")
     public Newfile savedata(@RequestBody  newww){
@@ -14,16 +19,16 @@ public class NewfileController{
     }
     @GetMapping("/get/{id}"){
         public Newfile findall(){
-            return src.findall()
+            return src.findall();
         }
     }
    
     @PutMapping("/put/{id}") //update
-    public Studententity update(@PathVariable int id , @RequestBody Studententity st){
-        return src.updatet(id,st);
+    public Newfile update(@PathVariable int id , @RequestBody Newfile newww ){
+        return src.updatet(id,newww);
    }
     @DeleteMapping("/delete/{id}") // delete
-    public String delete(@PathVariable int id,@RequestBody Studententity st){
+    public String delete(@PathVariable int id,@RequestBody Newfile newww){
         return src.delete(id);
     }
 
